@@ -1,0 +1,8 @@
+INSERT INTO ENTRETERIMENTO (NOME, TIPO, DIRETOR, ATOR_PRINCIPAL, ATRIZ_PRINCIPAL, ANO_LANCAMENTO, DURACAO_MINUTOS, CLASSIFICACAO_ETARIA, GENERO, Nacionalidade, RANKING, RANKING_TIPO, RANKING_NOME) 
+VALUES ('Parasita', 'FILME', 'Bong Joon-ho', 'Song Kang-ho', 'Lee Sun-kyun', 2019, 136, '16+', 'Drama', 'Coreana', 1, 'Netflix', 'Netflix Brasil'), ('The Irishman', 'FILME', 'Martin Scorsese', 'Robert De Niro', 'Al Pacino', 2019, 169, '16+', 'Crime', 'Americana', 2, 'Netflix', 'Netflix Brasil');
+
+INSERT INTO ENTRETERIMENTO (NOME, TIPO, DIRETOR, ATOR_PRINCIPAL, ATRIZ_PRINCIPAL, ANO_LANCAMENTO, DURACAO_MINUTOS, CLASSIFICACAO_ETARIA, GENERO, Nacionalidade, RANKING, RANKING_TIPO, RANKING_NOME) 
+VALUES ('The Witcher', 'SÉRIE', 'Lauren Schmidt Hissrich', 'Henry Cavill', 'Anya Chalotra', 2019, 60, '16+', 'Fantasia', 'Americana', 1, 'Amazon Prime', 'Amazon Prime Brasil'), ('The Crown', 'SÉRIE', 'Peter Morgan', 'Jonathan Pryce', 'Olivia Colman', 2016, 60, '16+', 'Drama', 'Britânica', 2, 'Amazon Prime', 'Amazon Prime Brasil'); 
+
+INSERT INTO ENTRETERIMENTO (NOME, TIPO, DIRETOR, ATOR_PRINCIPAL, ATRIZ_PRINCIPAL, ANO_LANCAMENTO, DURACAO_MINUTOS, CLASSIFICACAO_ETARIA, GENERO, Nacionalidade, RANKING, RANKING_TIPO, RANKING_NOME) VALUES ('Inception', 'FILME', 'Christopher Nolan', 'Leonardo DiCaprio', 'Ellen Page', 2010, 148, '14+', 'Ação/Thriller', 'Americana', 1, 'Popularidade', 'Brasil'),
+('The Dark Knight', 'FILME', 'Christopher Nolan', 'Christian Bale', 'Heath Ledger', 2008, 152, '14+', 'Ação/Thriller', 'Americana', 2, 'Popularidade', 'Brasil');
