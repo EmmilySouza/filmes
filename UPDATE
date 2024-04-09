@@ -1,0 +1,28 @@
+10)  UPDATE ENTRETERIMENTO
+SET RANKING_NOME = 'Netflix'
+WHERE NOME IN ('Stranger Things', 'Black Mirror', 'Inception', 'Breaking Bad', 'Friends', 'The Dark Knight', 'The Shawshank Redemption', 'Kill Bill: Volume 1', 'Entrevista com o Vampiro', 'Sr. e Sra. Smith', 'Money Heist (La Casa de Papel)', 'The Witcher');
+UPDATE ENTRETERIMENTO SET RANKING_NOME = 'HBO Max' WHERE RANKING_NOME IS NULL OR RANKING_NOME = ''; 
+
+11) UPDATE ENTRETERIMENTO SET RANKING_TIPO = CASE WHEN NOME IN ('Breaking Bad', 'Friends', 'The Matrix', 'The Dark Knight', 'The Shawshank Redemption', 'Kill Bill: Volume 1', 'Interview with the Vampire', 'Mr. & Mrs. Smith', 'Money Heist') THEN 'Nacional' WHEN NOME IN ('Forrest Gump', 'Fight Club', 'Vikings', 'Pulp Fiction', 'The Godfather', 'Bastardos Inglórios', 'Tropa de Elite', 'Central do Brasil') THEN 'Nacional' ELSE 'Mundial' END;
+UPDATE ENTRETERIMENTO SET RANKING = CASE WHEN NOME IN ('Breaking Bad', 'Friends', 'The Dark Knight', 'The Shawshank Redemption', 'The Matrix', 'Interview with the Vampire', 'Kill Bill: Volume 1', 'Mr. & Mrs. Smith', 'Money Heist') THEN 1 ELSE RANKING END WHERE NOME IN ('Breaking Bad', 'Friends', 'The Dark Knight', 'The Shawshank Redemption', 'The Matrix', 'Interview with the Vampire', 'Kill Bill: Volume 1', 'Mr. & Mrs. Smith', 'Money Heist'); 
+UPDATE ENTRETERIMENTO
+SET RANKING = CASE 
+                WHEN NOME IN ('Pulp Fiction', 'Fight Club', 'The Godfather', 'Forrest Gump', 'Bastardos Inglórios', 'Central do Brasil', 'Vikings', 'Tropa de Elite') THEN 2
+                ELSE RANKING
+            END
+WHERE NOME IN ('Pulp Fiction', 'Fight Club', 'The Godfather', 'Forrest Gump', 'Bastardos Inglórios', 'Central do Brasil', 'Vikings', 'Tropa de Elite');
+UPDATE ENTRETERIMENTO
+SET RANKING = CASE 
+                WHEN NOME IN ('The Irishman', 'Inception', 'Cidade de Deus', 'The Witcher') THEN 3
+                ELSE RANKING
+            END
+WHERE NOME IN ('The Irishman', 'Inception', 'Cidade de Deus', 'The Witcher');
+
+12)UPDATE ENTRETERIMENTO
+SET RANKING = 
+    CASE 
+        WHEN NOME IN ('Breaking Bad', 'Friends', 'The Dark Knight', 'The Shawshank Redemption', 'The Matrix', 'Interview with the Vampire', 'Kill Bill: Volume 1', 'Mr. & Mrs. Smith', 'Money Heist') THEN 1
+        WHEN NOME IN ('Pulp Fiction', 'Fight Club', 'The Godfather', 'Forrest Gump', 'Bastardos Inglórios', 'Central do Brasil', 'Vikings', 'Tropa de Elite') THEN 2
+        WHEN NOME IN ('The Irishman', 'Inception', 'Cidade de Deus', 'The Witcher') THEN 3
+        ELSE 15
+    END;
